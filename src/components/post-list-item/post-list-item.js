@@ -1,11 +1,11 @@
 import React from 'react';
 import './post-list-item.css';
 
-const PostlistItem = () => {
+const PostlistItem = ({label}) => {
     return (
         <li className="app-list-item d-flex justify-content-between">
             <span className="app-list-item-label">
-                Hello
+                {label}
             </span>
             <div className="d-flex justyfy-content-center align-items-center">
                 <button type="button" className="btn-star btn-sm">
