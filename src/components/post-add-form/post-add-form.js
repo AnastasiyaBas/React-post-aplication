@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './post-add-form.css';
-
 export default class PostAddForm extends Component {
     constructor(props) {
         super(props);
@@ -30,12 +29,11 @@ export default class PostAddForm extends Component {
                     placeholder="What are you thinking now?"
                     className="form-control new-post-label"
                     onChange={this.onValueChange}
-                    value={this.state.text}/>
+                    value={this.state.text}
+                />
                 <button
                     type="submit"
-                    className="btn btn-outline-secondary">
-                        Add
-                    </button>
+                    className="btn btn-outline-secondary">Add</button>
             </form>
         )
     }
